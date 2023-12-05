@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928516361285",
+    "project_id": "b2023-gr2sw-smsp",
+    "storage_bucket": "b2023-gr2sw-smsp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928516361285:android:1a527b64008b6c4aa9672c",
+        "android_client_info": {
+          "package_name": "com.example.b2023sw"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf2304Xk7AWxcqjOs1vph5Gld12sGXEQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
