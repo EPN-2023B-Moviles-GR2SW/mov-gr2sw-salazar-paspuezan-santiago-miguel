@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="saludo">Hi Friend! im happy  -> Condicion 2</string>
+    <color name="azules">#1B60B4</color>
+    <color name="color_texto">#385B19</color>
+    <color name="color_fondo">#FFAFAF</color>
+</resources>

@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="saludo">hola mijin -> Condicion 3</string>
+    <color name="amarillo">#E6D110</color>
+    <color name="color_texto">#17CAC3</color>
+    <color name="color_fondo">#DA5E1B</color>
+</resources>
