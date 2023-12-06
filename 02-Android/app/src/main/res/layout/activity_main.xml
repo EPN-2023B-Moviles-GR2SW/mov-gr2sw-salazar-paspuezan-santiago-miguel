@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color_fondo">>
+    android:background="@color/color_fondo">
 
 
     <TextView
@@ -15,8 +15,18 @@
         android:textColor="@color/color_texto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_ciclo_vida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:text="Holiiii"
+        app:layout_constraintBottom_toTopOf="@+id/firstComponent"
+        app:layout_constraintEnd_toEndOf="@+id/firstComponent"
+        app:layout_constraintStart_toStartOf="@+id/firstComponent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
