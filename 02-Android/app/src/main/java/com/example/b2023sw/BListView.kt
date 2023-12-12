@@ -23,7 +23,7 @@ class BListView : AppCompatActivity() {
         val botonAnadirListView = findViewById<Button>(R.id.btn_aniadir_list_view)
         botonAnadirListView
             .setOnClickListener{
-                //click
+
             }
     }
 }
