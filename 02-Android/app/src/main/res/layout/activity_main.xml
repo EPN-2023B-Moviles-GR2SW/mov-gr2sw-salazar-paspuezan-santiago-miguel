@@ -29,4 +29,12 @@
         app:layout_constraintEnd_toEndOf="@+id/firstComponent"
         app:layout_constraintStart_toStartOf="@+id/firstComponent" />
 
+    <Button
+        android:id="@+id/btn_ir_list_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L. view"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="128dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
