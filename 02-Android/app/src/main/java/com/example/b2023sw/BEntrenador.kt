@@ -5,5 +5,7 @@ class BEntrenador(
     var nombre: String?,
     var description: String?
 ) {
-
+    override fun toString(): String {
+        return "${nombre} - ${description}"
+    }
 }
