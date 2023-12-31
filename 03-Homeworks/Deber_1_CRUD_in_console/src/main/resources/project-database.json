@@ -1,0 +1,82 @@
+[
+  {
+    "nombre": "Desarrollo de Aplicación Web",
+    "descripcion": "Desarrollo de una aplicación web de gestión de tareas",
+    "tareas": [
+      {
+        "id": 1,
+        "nombreTarea": "Diseño de la interfaz de usuario",
+        "descripcionTarea": "Crear los diseños iniciales para la interfaz de usuario",
+        "fechaCreacion": "Dec 1, 2023, 12:00:00 AM",
+        "completada": true
+      },
+      {
+        "id": 2,
+        "nombreTarea": "Implementación de la lógica del backend",
+        "descripcionTarea": "Desarrollar la lógica del backend para la aplicación",
+        "fechaCreacion": "Dec 5, 2023, 12:00:00 AM",
+        "completada": false
+      },
+      {
+        "id": 3,
+        "nombreTarea": "Configuración de la base de datos",
+        "descripcionTarea": "Configurar la base de datos para almacenar los datos de la aplicación",
+        "fechaCreacion": "Dec 10, 2023, 12:00:00 AM",
+        "completada": false
+      },
+      {
+        "id": 7,
+        "nombreTarea": "tarea de prueba de ingreso",
+        "descripcionTarea": "Es para ingresar la tarea correctamente",
+        "fechaCreacion": "Dec 30, 2023, 12:59:52 PM",
+        "completada": false
+      }
+    ]
+  },
+  {
+    "nombre": "Preparación de Presentación",
+    "descripcion": "Preparación para la presentación del proyecto final",
+    "tareas": [
+      {
+        "id": 4,
+        "nombreTarea": "Elaboración de diapositivas",
+        "descripcionTarea": "Crear las diapositivas para la presentación",
+        "fechaCreacion": "Nov 25, 2023, 12:00:00 AM",
+        "completada": true
+      },
+      {
+        "id": 5,
+        "nombreTarea": "Practicar la presentación",
+        "descripcionTarea": "Realizar ensayos para mejorar la presentación",
+        "fechaCreacion": "Dec 15, 2023, 12:00:00 AM",
+        "completada": false
+      }
+    ]
+  },
+  {
+    "nombre": "Testing Basico",
+    "descripcion": "Para agregar tareas de test",
+    "tareas": [
+      {
+        "id": 12,
+        "nombreTarea": "Para probar bien",
+        "descripcionTarea": "Es para escribir algo mejor jajaja",
+        "fechaCreacion": "Dec 31, 2023, 2:34:45 PM",
+        "completada": false
+      }
+    ]
+  },
+  {
+    "nombre": "Work",
+    "descripcion": "Para agregar tareas de mi trabajo",
+    "tareas": [
+      {
+        "id": 14,
+        "nombreTarea": "Ya la completé",
+        "descripcionTarea": "Es para mdificar el completado jajaj",
+        "fechaCreacion": "Dec 31, 2023, 4:46:16 PM",
+        "completada": true
+      }
+    ]
+  }
+]
