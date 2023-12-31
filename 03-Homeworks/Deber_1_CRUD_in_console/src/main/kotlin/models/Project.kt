@@ -27,18 +27,6 @@ data class Project(
         }
     }
 
-    fun getAllTasks(): List<Task> {
-        return tareas.toList()
-    }
-
-    fun getCompletedTasks(): List<Task> {
-        return tareas.filter { it.completada }
-    }
-
-    fun getPendingTasks(): List<Task> {
-        return tareas.filter { !it.completada }
-    }
-
     override fun toString(): String {
         return "Proyecto: $nombre \n\tDescripción: $descripcion \n\tTotal de tareas: ${tareas.size}"
     }

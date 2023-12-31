@@ -11,24 +11,10 @@
         "completada": true
       },
       {
-        "id": 2,
-        "nombreTarea": "Implementación de la lógica del backend",
-        "descripcionTarea": "Desarrollar la lógica del backend para la aplicación",
-        "fechaCreacion": "Dec 5, 2023, 12:00:00 AM",
-        "completada": false
-      },
-      {
         "id": 3,
         "nombreTarea": "Configuración de la base de datos",
         "descripcionTarea": "Configurar la base de datos para almacenar los datos de la aplicación",
         "fechaCreacion": "Dec 10, 2023, 12:00:00 AM",
-        "completada": false
-      },
-      {
-        "id": 7,
-        "nombreTarea": "tarea de prueba de ingreso",
-        "descripcionTarea": "Es para ingresar la tarea correctamente",
-        "fechaCreacion": "Dec 30, 2023, 12:59:52 PM",
         "completada": false
       }
     ]
@@ -75,6 +61,32 @@
         "nombreTarea": "Ya la completé",
         "descripcionTarea": "Es para mdificar el completado jajaj",
         "fechaCreacion": "Dec 31, 2023, 4:46:16 PM",
+        "completada": true
+      }
+    ]
+  },
+  {
+    "nombre": "EPN",
+    "descripcion": "Escuela Politécnica Nacional",
+    "tareas": [
+      {
+        "id": 15,
+        "nombreTarea": "Hacer los proyectos de mitad del semestre",
+        "descripcionTarea": "sdgdfhsfh",
+        "fechaCreacion": "Dec 31, 2023, 5:10:59 PM",
+        "completada": true
+      }
+    ]
+  },
+  {
+    "nombre": "Aplicaciones móviles",
+    "descripcion": "PAra tareas de app Mobiles",
+    "tareas": [
+      {
+        "id": 16,
+        "nombreTarea": "Deber 1 - CRUD",
+        "descripcionTarea": "Para hacer el CRUD en consola",
+        "fechaCreacion": "Dec 31, 2023, 5:26:20 PM",
         "completada": true
       }
     ]

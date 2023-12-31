@@ -140,13 +140,13 @@ class GestorProyecto {
 
                     "7" -> {
                         println("Saliendo del programa...")
-                        continuar = false // Actualizar continuar a false para salir del bucle
+                        continuar = false
                     }
 
                     else -> println("Opción inválida")
                 }
                 println("Presiona una tecla para continuar...")
-                readLine() // Esta línea hará una pausa hasta que se presione Enter
+                readLine()
             }
             projectManager.guardarJSON(projectList,url);
         }

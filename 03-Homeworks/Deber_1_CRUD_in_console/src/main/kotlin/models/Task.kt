@@ -11,10 +11,6 @@ data class Task(
 ) {
     constructor(id: Int, nombreTarea: String, descripcionTarea: String, completada: Boolean = false) :
             this(id, nombreTarea, descripcionTarea, Date(), completada)
-    fun completeTask() {
-        this.completada = true
-    }
-
     override fun toString(): String {
         val estado = if (completada) "Completada" else "Pendiente"
         val fechaFormateada = fechaCreacion.toString()
