@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        EBaseDeDatos.tablaEntrenador= ESqliteHelperEntrenador(
+            this
+        )
         val butonClickToLife= findViewById<Button>(R.id.btn_ciclo_vida)
         butonClickToLife
             .setOnClickListener{
@@ -45,6 +48,16 @@ class MainActivity : AppCompatActivity() {
             .setOnClickListener {
                 abrirActividadConParametros(
                     CIntentExplicitoParametros::class.java)
+            }
+        val botonSqlite = findViewById<Button>(R.id.btn_sqlite)
+        botonSqlite
+            .setOnClickListener {
+                irActividad(ECrudEntrenador::class.java)
+            }
+        val botonRView = findViewById<Button>(R.id.btn_RecyclerView)
+        botonRView
+            .setOnClickListener {
+                irActividad(FRecyclerView::class.java)
             }
     }
 

@@ -13,7 +13,7 @@ class ESqliteHelperEntrenador(
     null,
     1
     ){
-    override fun onCreate(p0: SQLiteDatabase?) {
+    override fun onCreate(bd: SQLiteDatabase?) {
         val scriptSQLCrearTablaEntrenador =
             """
                 CREATE TABLE ENTRENADOR(
@@ -22,6 +22,7 @@ class ESqliteHelperEntrenador(
                 descripcion VARCHAR(50)
                 )
             """.trimIndent()
+        bd?.execSQL(scriptSQLCrearTablaEntrenador)
     }
 
     override fun onUpgrade(p0: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
@@ -76,5 +77,34 @@ class ESqliteHelperEntrenador(
             )
         conexionEscritura.close()
         return if (resultadoActualizacion.toInt() == -1) false else true
+    }
+    fun consultarEntrenadorPorID(id: Int): BEntrenador {
+        val BasedeDatosLectura = readableDatabase
+        val scriptConsultaLectura="""
+            SELECT * FROM ENTRENADOR WHERE id = ${id}
+        """.trimIndent()
+        val parametrosConsultaLectura = arrayOf(id.toString())
+        val resultadoConsultaLectura = BasedeDatosLectura.rawQuery(
+                scriptConsultaLectura,
+                parametrosConsultaLectura,
+            )
+        val existeUsuario = resultadoConsultaLectura.moveToFirst()
+        val usuarioEncontrado = BEntrenador(0,"","")
+        val arreglo = arrayListOf<BEntrenador>()
+        if(existeUsuario){
+            do{
+                val id = resultadoConsultaLectura.getInt(0) //Columna indice 0 -> ID
+                val nombre = resultadoConsultaLectura.getString(1) //Columna indice 1 -> NOMBRE
+                val descripcion = resultadoConsultaLectura.getString(2) //Columna indice 2 -> DESCRIPCION
+                if(id != null){
+                    usuarioEncontrado.id = id
+                    usuarioEncontrado.nombre = nombre
+                    usuarioEncontrado.description = descripcion
+                }
+            }while (resultadoConsultaLectura.moveToNext())
+        }
+        resultadoConsultaLectura.close()
+        BasedeDatosLectura.close()
+        return usuarioEncontrado
     }
 }

@@ -24,11 +24,11 @@
         android:id="@+id/btn_ciclo_vida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="52dp"
-        android:text="Holiiii"
+        android:layout_marginBottom="56dp"
+        android:text="C.Ciclovida"
         app:layout_constraintBottom_toTopOf="@+id/firstComponent"
         app:layout_constraintEnd_toEndOf="@+id/firstComponent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/firstComponent" />
 
     <Button
@@ -39,7 +39,7 @@
         android:text="L. view"
         app:layout_constraintBottom_toTopOf="@+id/btn_ciclo_vida"
         app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida" />
 
     <Button
@@ -63,6 +63,27 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_ir_intent_explicito"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/btn_ir_intent_explicito"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_sqlite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="ESQLite"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_ciclo_vida"
+        app:layout_constraintStart_toEndOf="@+id/btn_ciclo_vida"
+        app:layout_constraintTop_toTopOf="@+id/btn_ciclo_vida" />
+
+    <Button
+        android:id="@+id/btn_RecyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:text="R. View"
+        app:layout_constraintEnd_toEndOf="@+id/btn_sqlite"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_sqlite"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
