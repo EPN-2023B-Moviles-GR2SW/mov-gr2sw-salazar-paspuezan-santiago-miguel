@@ -1,11 +1,11 @@
-package com.example.exam
+package com.example.b2023sw
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class menuGeneral : AppCompatActivity() {
+class addTarea : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu_general)
+        setContentView(R.layout.activity_add_tarea)
     }
 }
