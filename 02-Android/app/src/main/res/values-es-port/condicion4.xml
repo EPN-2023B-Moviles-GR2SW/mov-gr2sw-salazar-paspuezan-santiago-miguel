@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="saludo">mijin nuevamente hola -> Condicion 4</string>
-    <color name="black">#FF000000</color>
-    <color name="color_texto">#099427</color>
-    <color name="color_fondo">#5C37B1</color>
-</resources>

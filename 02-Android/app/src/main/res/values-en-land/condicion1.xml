@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="saludo">Hi Friend! Nice to meet you -> Condicion 1</string>
-    <color name="black">#FF000000</color>
-    <color name="color_texto">#7F48D6</color>
-    <color name="color_fondo">#949494</color>
-</resources>

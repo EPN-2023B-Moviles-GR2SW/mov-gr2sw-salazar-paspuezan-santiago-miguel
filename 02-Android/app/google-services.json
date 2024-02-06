@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "928516361285",
-    "project_id": "b2023-gr2sw-smsp",
-    "storage_bucket": "b2023-gr2sw-smsp.appspot.com"
+    "project_number": "824119905999",
+    "project_id": "b2023-gr2sw-vaes-1",
+    "storage_bucket": "b2023-gr2sw-vaes-1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:928516361285:android:1a527b64008b6c4aa9672c",
+        "mobilesdk_app_id": "1:824119905999:android:0d3e1c05b03284800b31ba",
         "android_client_info": {
-          "package_name": "com.example.b2023sw"
+          "package_name": "com.example.b2023gr2sw"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCf2304Xk7AWxcqjOs1vph5Gld12sGXEQ0"
+          "current_key": "AIzaSyATkVdoQr9gPuZffHz3GlfKIaR4ON9MvGw"
         }
       ],
       "services": {
