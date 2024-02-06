@@ -47,7 +47,54 @@ class IFirestore : AppCompatActivity() {
         // Crear datos
         val botonCrear = findViewById<Button>(R.id.btn_fs_crear)
         botonCrear.setOnClickListener { crearEjemplo() }
+
+
+        // Boton Eliminar
+        val botonFirebaseEliminar = findViewById<Button>(
+            R.id.btn_fs_eliminar)
+        botonFirebaseEliminar.setOnClickListener {
+            eliminarRegistro() }
+        // Empezar a paginar
+        val botonFirebaseEmpezarPaginar = findViewById<Button>(
+            R.id.btn_fs_epaginar)
+        botonFirebaseEmpezarPaginar.setOnClickListener {
+            query = null; consultarCiudades(adaptador);
+        }
+        // Paginar
+        val botonFirebasePaginar = findViewById<Button>(
+            R.id.btn_fs_paginar)
+        botonFirebasePaginar.setOnClickListener {
+            consultarCiudades(adaptador)
+        }
+
     } // FIN ONCREATE
+    fun consultarCiudades(
+        adaptador: ArrayAdapter<ICities>
+    ){    }
+
+    fun eliminarRegistro(){
+        val db = Firebase.firestore
+        val referenciaEjemploEstudiante = db
+            .collection("ejemplo")
+
+        referenciaEjemploEstudiante
+            .document("12345678")
+            .delete() // elimina
+            .addOnCompleteListener { /* Si todo salio bien*/ }
+            .addOnFailureListener { /* Si algo salio mal*/ }
+    }
+    fun guardarQuery(
+        documentSnapshots: QuerySnapshot,
+        refCities: Query
+    ){
+        if (documentSnapshots.size() > 0) {
+            val ultimoDocumento = documentSnapshots
+                .documents[documentSnapshots.size() - 1]
+            query = refCities
+                // Start After nos ayuda a paginar
+                .startAfter(ultimoDocumento)
+        }
+    }
     fun crearEjemplo(){
         val db = Firebase.firestore
         val referenciaEjemploEstudiante = db
