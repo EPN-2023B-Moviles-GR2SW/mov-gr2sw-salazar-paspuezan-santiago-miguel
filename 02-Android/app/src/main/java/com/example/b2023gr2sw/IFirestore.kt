@@ -70,7 +70,44 @@ class IFirestore : AppCompatActivity() {
     } // FIN ONCREATE
     fun consultarCiudades(
         adaptador: ArrayAdapter<ICities>
-    ){    }
+    ){
+        val db = Firebase.firestore
+        val citiesRef = db.collection("cities").orderBy("population").limit(1)
+        var tarea: Task<QuerySnapshot>? = null
+        if (query == null){
+            tarea = citiesRef.get()
+            limpiarArreglo()
+            adaptador.notifyDataSetChanged()
+        } else {
+            tarea = query?.get()
+        }
+        if (tarea!=null){
+            tarea
+                .addOnSuccessListener {documentSnapshots ->
+                    guardarQuery(documentSnapshots, citiesRef)
+                    for (ciudad in documentSnapshots){
+                        anadirAArregloCiudad(ciudad)
+                    }
+                    adaptador.notifyDataSetChanged()
+                }
+                .addOnFailureListener{
+                    // Errores
+
+                }
+        }
+        query
+            ?.get()
+            ?.addOnSuccessListener {
+                guardarQuery(it, citiesRef)
+                for (ciudad in it){
+                    anadirAArregloCiudad(ciudad)
+                }
+                adaptador.notifyDataSetChanged()
+            }
+            ?.addOnFailureListener {
+                // Errores
+            }
+    }
 
     fun eliminarRegistro(){
         val db = Firebase.firestore
