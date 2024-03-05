@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "142504342189",
+    "firebase_url": "https://examenmobiles-default-rtdb.firebaseio.com",
+    "project_id": "examenmobiles",
+    "storage_bucket": "examenmobiles.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142504342189:android:1120d3aa8ba9c87cba0c24",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8zbHCCYKH4QAnu_KBoq8FHp1WMou8OW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
